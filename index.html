@@ -1,122 +1,81 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>wilson fartlett's website</title>
-	</head>
-	<body>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wilson Fartlett's Website</title>
 	<style>
-	
-	.tab_center
-	{
-		padding-left: 192px;
-	}
+		.tab_center {
+			padding-left: 192px;
+		}
 
-	.row
-	{
-		display: flex;
-	}
-	
-	@font-face { font-family: Comic; src: url('COMIC.TTF'); } 
-     h1
-	 {
-		font-family: Comic
-     }
+		.row {
+			display: flex;
+		}
 
-	 h2 
-     { 
-		font-family: Comic
-     }
+		@font-face {
+			font-family: Comic;
+			src: url('assets/COMIC.TTF');
+		}
 
-	h3
-	{
-        font-family: Comic
-    }
+		h1, h2, h3 {
+			font-family: Comic;
+		}
 
-	.center
-	{
-		text-align: center;
-	}
+		.center {
+			text-align: center;
+		}
 
-	.center_img
-	{
-		margin: 0px 700px;
-	}
+		.center_img {
+			margin: 0 auto;
+		}
 
-	.center_vid
-	{
-		margin: 0px 650px;
-	}
+		.center_vid {
+			margin: 0 auto;
+		}
 
-	.center_button
-	{
-		background-color: #214cce;
-		border: none;
-		color: white;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 18px;
-		margin: 5px 800px;
-		cursor: pointer;
-	}
-
-	.button
-	{
-		background-color: #214cce;
-		border: none;
-		color: white;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		font-size: 18px;
-		margin: 4px 2px;
-		cursor: pointer;
-	}
-}
-
+		.center_button,
+		.button {
+			background-color: #214cce;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 18px;
+			margin: 5px auto;
+			cursor: pointer;
+		}
 	</style>
-		
-		<div class="row">			
-			<h2><a href="code.html" class="button">how i made this website</a></h2>
-			<h2><a href="games.html" class="button">totally not pirated games</a></h2>
-			<h1 class="tab_center">wilson fartlett's website</h1>
-		</div>
-		<br><br>
-		<h3 class="center">my name is wilson fartlett and i spend way too much money on csgo</h3>
-		<br><br>
-
-		<h3> csgo skins i own:</h3>
-		<br>
-		<img src="all my skins.png" border="4">
-		<br><br>
-		
-		
-
-		
-		
-		<br><br><br><br><br><br><h3>nice moosic by tyler the creator</h3>
-
-		<audio src="SMUCKERS.mp3" controls>
-			<p>if you can see this, you can't hear the music nerd</p>
-		</audio>
-
-
-		<br><br><br><br><br><br>
-
-		<h2><a href="https://steamcommunity.com/profiles/76561198987957699"target="_blank"> uhh my steam profile</a><h2>
-		<br><br><br><br>
-		
-		<h2 class="center">The greatest battle known to mankind: fredrick vs wallstreetbets</h2>
-		<img class="center_img" src="fredrick.png" border="4" width=400px height=150px>
-		<h3 class="center">You can watch the whole video by michael reeves here: </h3>
-		<iframe width="560" height="315" class="center_vid" src="https://www.youtube.com/embed/USKD3vPD6ZA" title="YouTube video player" frameborder="4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-		<br><br><br><br><br><br><br><br>
-		<h6 class="center"><i>Made by Wilson Fartlett. <u>If you steal this website you smell of poo.</u></i></h6>
-
-	</body>
-</html>
+</head>
+<body>
+	<div class="row">
+		<h2><a href="code.html" class="button">How I Made This Website</a></h2>
+		<h2><a href="games.html" class="button">Totally Not Pirated Games</a></h2>
+		<h1>Wilson Fartlett's Website</h1>
+	</div>
+	<br><br>
+	<h3 class="center">My name is Wilson Fartlett, and I spend way too much money on CS:GO</h3>
+	<br><br>
+	<h3>CS:GO Skins I Own:</h3>
+	<br>
+	<img src="assets/all_my_skins.png" alt="All My Skins" border="4">
+	<br><br>
+	<br><br><br><br><br><br>
+	<h3>Nice music by Tyler, the Creator</h3>
+	<script>
+		var smuckers = new Audio('assets/SMUCKERS.mp3');
+	</script>
+	<audio src="assets/SMUCKERS.mp3" controls>
+		<p>If you can see this, you can't hear the music nerd</p>
+	</audio>
+	<br><br><br><br><br><br>
+	<h2><a href="https://steamcommunity.com/profiles/76561198987957699" target="_blank">My Steam Profile</a></h2>
+	<br><br><br><br>
+	<h2 class="center">The Greatest Battle Known to Mankind: Fredrick vs. WallStreetBets</h2>
+	<img class="center_img" src="assets/fredrick.png" alt="Fredrick" border="4" width="400px" height="150px">
+	<h3 class="center">You can watch the whole video by Michael Reeves here:</h3>
+	<iframe width="560" height="315" class="center_vid" src="https://www.youtube.com/embed/USKD3vPD6ZA" title="YouTube video player" frameborder="4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	<br><br><br><br><br><br><br><br>
+	<h6 class="center"><i>Made by Wilson Fartlett. <u>If you steal this website, you smell of poo.</u></
