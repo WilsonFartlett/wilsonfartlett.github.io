@@ -6,7 +6,32 @@
 		<title>not piracy</title>
 	</head>
 	<body>
+<style>
+button {
+  --c:  #229091; /* the color*/
+  
+  box-shadow: 0 0 0 .1em inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+button:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+}
+button:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
 
+</style>
 	<style>
 
 	.tab_center
@@ -67,7 +92,7 @@
 	</style>
 
 	<div class="row">
-		<h2><a href="index.html" class="button">back to home</a></h2>
+		<h2><a href="../" class="button">back to home</a></h2>
 	</div>
 	<h1 class="center title">wilson fartlett's website</h1>
 	
@@ -77,37 +102,54 @@
 	<h3 class="center">Instructions: Once you click the link you will be directed to a website that will ask for a key. I will add the key underneath the game name, then download and enjoy.</h3>
 	<br><br><br><br>
 
-	<h3><a href="https://mega.nz/folder/bkcDAQbY">Exit the gungeon</a></h3>
-	<h4>JD7WQ8PbVmO7k993Mhef2w<h4>
+	<h3><a target="_blank" href="https://mega.nz/folder/bkcDAQbY">Exit the gungeon</a></h3>
+	<h4 id="ExitGaem">JD7WQ8PbVmO7k993Mhef2w&nbsp;&nbsp;&nbsp;<button onclick="copyText('ExitGaem')">Copy key</button><h4>
 	<br><br>
 
-	<h3><a href="https://mega.nz/folder/jt9ixYha">Cruelty squad</a></h3>
+	<h3><a target="_blank" href="https://mega.nz/folder/jt9ixYha">Cruelty squad</a></h3>
 	<h4>cJyEvuGtPrqcFtEp00i_vg<h4>
 	<br><br>
 
-	<h3><a href="https://mega.nz/folder/rtcDWASa">BTD 5</a></h3>
-	<h4>AVLcJVnI1Nt-70qvOpjzAw<h4>
+	<h3><a target="_blank" href="https://mega.nz/folder/rtcDWASa">BTD 5</a></h3>
+	<h4 id="balloons">AVLcJVnI1Nt-70qvOpjzAw&nbsp;&nbsp;&nbsp;<button onclick="copyText('balloons')">Copy key</button><h4>
 	<br><br>
 
-	<h3><a href="https://mega.nz/file/HkUmTCoC">Hotline miami 2: Wrong number</a></h3>
-	<h4>vqTfAkizc32QNnPdcdwFuaL-EK1zvYiE8mohcXai5Z0<h4>
+	<h3><a target="_blank" href="https://mega.nz/file/HkUmTCoC">Hotline miami 2: Wrong number</a></h3>
+	<h4 id="HotlineBling">vqTfAkizc32QNnPdcdwFuaL-EK1zvYiE8mohcXai5Z0&nbsp;&nbsp;&nbsp;<button onclick="copyText('HotlineBling')">Copy key</button><h4>
 	<br><br>
 
-	<h3><a href="https://mega.nz/file/T9tAzBzD">Getting over it</a></h3>
-	<h4>aXTv6T5u9WNvChztabZF4RMgM1sQRfftGSrswWc1HPU<h4>
+	<h3><a target="_blank" href="https://mega.nz/file/T9tAzBzD">Getting over it</a></h3>
+	<h4 id="AngyMadGame">aXTv6T5u9WNvChztabZF4RMgM1sQRfftGSrswWc1HPU&nbsp;&nbsp;&nbsp;<button onclick="copyText('AngyMadGame')">Copy key</button><h4>
 	<br><br>
 
-	<h3><a href="https://mega.nz/file/mhlG0ZpB">Super meat boy:</a></h3>
-	<h4>mlSU08eqGiS7QErp71weIZk7pBE-R15jowwdctyH6xY<h4>
+	<h3><a target="_blank" href="https://mega.nz/file/mhlG0ZpB">Super meat boy:</a></h3>
+	<h4 id="meaty">mlSU08eqGiS7QErp71weIZk7pBE-R15jowwdctyH6xY&nbsp;&nbsp;&nbsp;<button onclick="copyText('meaty')">Copy key</button><h4>
 	<br><br>
 
-	<h3><a href="https://mega.nz/file/O8UFjIAI">FAITH:</a></h3>
-	<h4>ASDpVEMAcg2vTSOxi0HAIB-Insv0m2B7QHvGpM2ZdVE<h4>
+	<h3><a target="_blank" href="https://mega.nz/file/O8UFjIAI">FAITH:</a></h3>
+	<h4 id="faith">ASDpVEMAcg2vTSOxi0HAIB-Insv0m2B7QHvGpM2ZdVE&nbsp;&nbsp;&nbsp;<button onclick="copyText('faith')">Copy key</button><h4>
 	<br><br>
 
 	<br><br><br><br><br><br><br><br>
 		
 	<h6 class="center"><i>Made by Wilson Fartlett. <u>If you steal this website you smell of poo.</u></i></h6>
+<script>
+function copyText(id) {
+    var elementToCopy = document.getElementById(id);
+    var tempElement = document.createElement('textarea');
 
+    var copiedText = elementToCopy.innerText.replace("Copy key", "").trim();
+
+    tempElement.value = copiedText;
+    document.body.appendChild(tempElement);
+
+    tempElement.select();
+    document.execCommand('copy');
+
+    document.body.removeChild(tempElement);
+}
+
+
+</script>
 	</body>
 </html>
