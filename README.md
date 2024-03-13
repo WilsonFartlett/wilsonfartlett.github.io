@@ -1,4 +1,4 @@
-# wilsonfartlett.github.io
+# wilsonfartlett.github.io (aka wilsonfartlett.onthewifi.com)
 my bad website
 
 
